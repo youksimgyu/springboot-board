@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--    <meta name="viewport"-->
+    <!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <title>게시글 페이지</title>
+</head>
+
+<body>
+
+<!-- Semantic 태그 활용해서 만들기 -->
+<header id="header"></header>
+
+<main>
+    <header>
+        <h1>첫번째 글</h1>
+    </header>
+
+    <aside>
+        <p><span>youk</span></p>
+        <p><a href="#">youk@gmail.com</a></p>
+        <p><time datetime="2022-12-05">2022-12-05</time></p>
+        <p>#java</p>
+    </aside>
+
+    <section>
+
+        <p>본문<br><br></p>
+
+        <div>
+            <!-- 댓글 쓰기 -->
+            <form>
+                <label for="articleComment" hidden>댓글</label>
+                <textarea id="articleComment" placeholder="댓글 쓰기"></textarea>
+                <button type="submit">쓰기</button>
+            </form>
+
+            <!-- 댓글 리스트 -->
+            <ul>
+                <li>
+                    <div>
+                        <time><small>2022-12-05</small></time>
+                        <strong>youk</strong>
+                        <p>
+                            기존의 댓글글1
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time><small>2022-12-05</small></time>
+                        <strong>youk</strong>
+                        <p>
+                            기존의 댓글글2
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <nav>
+            <a href="#">이전 글</a>
+            <a href="#">다음 글</a>
+        </nav>
+
+    </section>
+</main>
+
+<footer id="footer"></footer>
+
+</body>
+</html>
