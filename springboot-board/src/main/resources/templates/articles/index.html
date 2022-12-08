@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <!--    <meta name="viewport"-->
@@ -11,10 +11,7 @@
 <body>
 
 <!-- Semantic 태그 활용해서 만들기 -->
-<header>
-  header 삽입부
-  <hr>
-</header>
+<header th:replace="header :: header"></header>
 
 <main>
   <!-- 검색창 -->
@@ -82,10 +79,7 @@
   </nav>
 </main>
 
-<footer>
-  <hr>
-  footer 삽입부
-</footer>
+<footer th:replace="footer :: footer"></footer>
 
 </body>
 </html>
